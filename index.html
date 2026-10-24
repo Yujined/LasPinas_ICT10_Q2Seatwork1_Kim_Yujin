@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Jujutsu High Admissions</title>
+</head>
+<body>
+    <video class="video-background" autoplay muted loop playsinline>
+    <source src="./yuji-bg.mp4" type="video/mp4">
+</video>
+    <header>
+        <div class="reactor"></div>
+        <h1>Jujutsu High Admissions</h1>
+        <p>Here you may check if you were accepted into Jujutsu High, the most prestigious institution of Sorcery.
+            We want to give every applicant good luck and a big thank you for applying!
+        </p>
+    </header>
+    <main>
+        <form>
+            <input type="text" id="first_name" placeholder="Enter your first name">
+
+            <br>
+
+            <input type="text" id="last_name" placeholder="Enter your last name">
+
+            <input type="button" py-click="candidate_checker" value="CHECK">
+        </form>
+            <div id="result"></div>
+    </main>
+
+    <py-script src="main.py"></py-script>
+</body>
+</html>

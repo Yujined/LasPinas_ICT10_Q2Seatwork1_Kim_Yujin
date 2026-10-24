@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;600;700&display=swap');
+
+/* For my background video */
+.video-background {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* the main Box Form or gray thing in the middle */
+main {
+    width: min(420px, calc(100% - 40px));
+    box-sizing: border-box;
+    margin: 45px auto;
+    padding: 30px 25px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 8px;
+}
+
+/* Overlay which darkens my background mp4 because it was WAY too messy and bright without it */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    pointer-events: none;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    background: #080808;
+}
+
+header p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px 10px;
+}
+
+header h1 {
+    font-size: clamp(32px, 5vw, 58px);
+    margin: 0 0 12px;
+    font-weight: 700;
+}
+
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    color: #222;
+    font: inherit;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+    color: #777;
+}
+
+input[type="button"] {
+    margin-top: 12px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    font: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
